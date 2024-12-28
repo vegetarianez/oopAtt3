@@ -21,8 +21,8 @@ public class DocumentService {
         userRepository.deleteById(id);
     }
 
-
-    public DocumentEntity insert(String name, String email) {
+    @Transactional
+    public DocumentEntity insert(String name, String email) {//done
         DocumentEntity documentEntity = new DocumentEntity();
         documentEntity.setId(UUID.randomUUID());
         documentEntity.setName(name);

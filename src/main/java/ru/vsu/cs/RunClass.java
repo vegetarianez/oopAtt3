@@ -11,7 +11,7 @@ public class RunClass implements CommandLineRunner {
     private final DocumentService documentService;
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String[] args) throws Exception {
         DocumentEntity documentEntity = documentService.insert("User345", "saturday@mail.com");
     }
 }
